@@ -14,8 +14,7 @@ defmodule Homework.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
-      applications: [:retry,
-      :hound],
+      applications: [:retry, :hound],
       extra_applications: [:logger]
     ]
   end

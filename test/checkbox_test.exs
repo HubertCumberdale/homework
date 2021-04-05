@@ -23,7 +23,7 @@ defmodule CheckboxTest do
     assert element_displayed?(checkbox_3)
 
 
-    #Other specific checks we would want to have done for each test could be continued here
+    #O ther specific checks we would want to have done for each test could be continued here
   end
 
   test "default checkbox state" do
@@ -66,7 +66,7 @@ defmodule CheckboxTest do
     click checkbox_3
     assert selected?(checkbox_3)  == false
     click checkbox_3
-    
+
     # Retrying assert 3 times with 1 second intervals.
     assertion_result = retry with: constant_backoff(1000) |> Stream.take(3) do
       assert selected?(checkbox_3)
